@@ -68,6 +68,9 @@ body {
 
 .account {
     display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--White);
     background-color: var(--Grey700);
     padding: 0.875rem;
     border: none;
@@ -82,23 +85,9 @@ body {
     background-color: var(--Green);
 }
 
-.account:hover a {
+.account:hover {
     color: var(--Grey900);
     font-weight: 700;
 }
 
-a {
-    text-decoration: none;
-    color: var(--White);
-}
 
-/* p {
-    font-size: 0.875;
-    font-weight: 400;
-} */
-
-@media (width < 375px) {
-    .container {
-        padding: 1.5rem;
-    };
-}
