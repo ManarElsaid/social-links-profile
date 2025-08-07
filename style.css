@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0;
+    background-color: var(--Grey900);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    /* max-width: 385px; */
+    background-color: var(--Grey800);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 1.25rem;
+    border-radius: 10px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 5rem;
+}
+
+.contact {
+    text-align: center;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    color: var(--Green);
+    font-size: 0.875rem;
+}
+
+.bio {
+    font-size: 0.875rem;
+}
+
+.accounts-sec {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    gap: 0.75rem;
+}
+
+.account {
+    display: inline-block;
+    background-color: var(--Grey700);
+    padding: 0.875rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 400;
+    transition: all ease 0.3s;
+
+}
+
+.account:hover {
+    cursor: pointer;
+    background-color: var(--Green);
+}
+
+.account:hover a {
+    color: var(--Grey900);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--White);
+}
+
+/* p {
+    font-size: 0.875;
+    font-weight: 400;
+} */
+
+@media (width < 375px) {
+    .container {
+        padding: 1.5rem;
+    };
+}
